@@ -1,20 +1,56 @@
-let cores = []; 
+// let cores = []; 
 
-for(let i = 0; i < 4; i++ ){
-    cores.push(prompt("Digite o cores: "));  // altera o valor do vetor 
+// for(let i = 0; i < 4; i++ ){
+//     cores.push(prompt("Digite o cores: "));  // altera o valor do vetor 
+// }
+
+// console.log(cores); 
+
+// cores.pop();
+
+// console.log(cores);
+
+// cores.push("black");
+// cores.push("yellow");
+
+// console.log(cores);
+
+// console.log(cores[0]);
+
+// console.log();
+
+
+let nomes = [];
+let idades = [];
+
+for (let i = 0; i < 4; i++) {
+    nomes.push(prompt("Digite o nome: "));
 }
 
-console.log(cores); 
+for (let i = 0; i < 4; i++) {
+    idades.push(prompt("Digite o idade: "));
+}
 
-cores.pop();
+// nomes.forEach(function(nome, i){
+//     console.log(nome, i)
+// })
 
-console.log(cores);
+// nomes.forEach(function(nome){
+//     idades.forEach(function(idade){
+//     console.log(nome, idade)
+// })
+// })
 
-cores.push("black");
-cores.push("yellow");
+for (let i = 0; i < 4; i++) {
+        nomes = nomes.filter(nome => nome.toLowerCase() !== "geraldo");
+}
 
-console.log(cores);
+    console.log(nomes);
 
-console.log(cores[0]);
+for (let i = 0; i < 4; i++) {
+       if( idades[i] < 13 ) {
+        nomes.push("Enzo");
+       }
+}
 
-console.log();
+console.log(nomes);

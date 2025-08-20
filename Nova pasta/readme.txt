@@ -94,3 +94,5 @@ paises.forEach(function(pais){               = > declaração da "variável"
 	console.log(pais);			       = > vai ler cada elemento do vetor  
 })
 }
+
+---------------------- aprender sobre filter() -----------------------
