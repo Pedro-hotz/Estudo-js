@@ -52,5 +52,6 @@ for (let i = 0; i < 4; i++) {
         nomes.push("Enzo");
        }
 }
+kkkkkkkkkkkkkk
 
 console.log(nomes);
