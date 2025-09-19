@@ -65,8 +65,42 @@
 // }
 
 
-// 4) ---------------------------------------------------------
-de
+// 4) --------------------------------------------------------
+
+// let sal = Number(prompt("Digite seu salário: ")); 
+
+// if (sal <= 280) {
+//     console.log("Seu antigo salário é " + (sal));
+//     console.log("O percentual aplicado é de 20%");
+//     console.log("O valor de reajuste é " + (sal * 0,2));
+//     console.log("Seu novo salário é " + (sal * 1.2));
+
+// } else if (sal > 280 || sal < 700) {
+//     console.log("Seu antigo salário é " + (sal));
+//     console.log("O percentual aplicado é de 15%");
+//     console.log("O valor de reajuste é " + (sal * 0,15));
+//     console.log("Seu novo salário é " + (sal * 1.15));
+// } else if (sal > 700 || sal < 1500) {
+
+//     console.log("Seu novo salário é " + (sal * 1.1));
+// }else if (sal < 1500) {
+
+//     console.log("Seu novo salário é " + (sal * 1.05));
+// }
+
+
+// 5) --------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 
 
 
