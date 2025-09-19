@@ -91,14 +91,22 @@
 
 // 5) --------------------------------------------------------
 
-let date = Number(prompt("Digite uma date: "));
+let date = prompt("Digite uma date: ");
 
+const meses = [
+    "janeiro", "fevereiro", "março", "abril",
+    "maio", "junho", "julho", "agosto",
+    "setembro", "outubro", "novembro", "dezembro"
+  ];
 
+let parte = date.split("/")               // Divide a data em partes e atribui na variável. Onde encontrar '/' divide . 
 
+let dia = parte[0];                       // Atribui a primeira parte da "divisão" que o slipt() fez 
 
+let mes = parseInt(parte[1]);             // Transforma a segunda parte em um número inteiro
 
+let ano = parte[2];                       // Atribui a ultima parte da "divisão" que o slipt() fez 
 
-
-
+console.log(`${dia} de ${meses[mes - 1]} de ${ano}`); // chama o array mes com o indice do mes digitado. -1 por causa do 0 
 
 
