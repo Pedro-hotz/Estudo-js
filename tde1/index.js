@@ -113,28 +113,39 @@
 // 6) --------------------------------------------------------
 
 
-// function calcu(ano, mes, dia) {
+// function calcu(ano, mes, dia) { 
 //     return console.log( (ano * 365) + (mes * 30) + dia);  
 // }
 
 // let dataUsu = prompt("Digite sua data de nascimento no seguinte padrão( DD/MM/YYY ): ");
 
-// let sepa = dataUsu.split("/"); 
+// let sepa = dataUsu.split("/");  // Separa o que foi digitado em um vetor. Quando da a barra, ele "corta"
 
-// calcu(sepa[sepa.length - 1], sepa[1], sepa[0]); 
+// calcu(Number(sepa[sepa.length - 1]), Number(sepa[1]), Number(sepa[0])); // É necessário fazer a conversão para Número pois ele vem com String 
 
 
 // 7) --------------------------------------------------------
 
+// function manipula( palavra ) {
+
+//     palavra.toLowerCase;
+
+//     let temp = palavra.replaceAll('a', 'U');
+
+//     let R = temp.replaceAll('o', 'G');
+
+//     return console.log("Agora está:" + R);
+// }
 
 
+// let palavra = prompt("Ditite uma palavra: ");
+
+// console.log("Você digitou: " + palavra); 
+
+// manipula(palavra); 
 
 
-
-
-
-
-
+// 8) --------------------------------------------------------
 
 
 
