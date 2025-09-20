@@ -124,7 +124,7 @@
 // calcu(Number(sepa[sepa.length - 1]), Number(sepa[1]), Number(sepa[0])); // É necessário fazer a conversão para Número pois ele vem com String 
 
 
-// 7) --------------------------------------------------------
+// 7) --------------------------------------------------------    + 
 
 // function manipula( palavra ) {
 
@@ -148,8 +148,43 @@
 // 8) --------------------------------------------------------
 
 
+// function impri(num) {
+
+//     for(let i = 1 ; i < 11; i ++){
+//         if ( (i * 7) > num ) {
+//             break;
+//         } else { 
+//             console.log( i + " X " + 7 + " = " + ( 7 * i)); 
+//         }
+//     }
+// }
+
+// let num = Number(prompt("Digite um número: "));
+
+// impri(num);
 
 
+// 9) --------------------------------------------------------
 
+function veri(nome) {
 
+    let qtd, maior; 
 
+    for (let i = 0; i < 5; i++) {
+        qtd = nome[i].length;
+
+        if ( qtd == maior) {
+            maior = nome[i]; 
+        }
+    }
+
+    return console.log("A string com o maior valor dentro do Array é " + maior); 
+}
+
+let nome = [];
+
+for (let i = 0; i < 5; i++) {
+    nome[i] = prompt(`Digite ${i + 1} nome:`);
+}
+
+veri(nome); 
