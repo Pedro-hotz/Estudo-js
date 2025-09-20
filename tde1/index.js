@@ -166,25 +166,52 @@
 
 // 9) --------------------------------------------------------
 
-function veri(nome) {
+// function veri(nome) {
 
-    let qtd, maior; 
+//      let maiorNome = 0, maiorQtd = "";  // declaração de variáveis vazias 
 
-    for (let i = 0; i < 5; i++) {
-        qtd = nome[i].length;
+//     for (let i = 0; i < 5; i++) {
+//         let qtd = nome[i].length;       // pega o valor de cada array e conta quantos caracteres tem e atribui a variavel "qtd"
 
-        if ( qtd == maior) {
-            maior = nome[i]; 
-        }
-    }
+//         if ( qtd > maiorQtd) {          // faz uma verificação de quantidade de caracteres. Caso qtd, for maior que maiorQtd, qtd é atribuida em maiorQtd
+//             maiorQtd = qtd;
+//             maiorNome = nome[i];        // Aqui atribui o maior nome em uma variável. 
 
-    return console.log("A string com o maior valor dentro do Array é " + maior); 
-}
+//                                         /*
+//                                         Não estou usando uma variável chama "maior" pq o "qtd" retorna um Number e se verificar e atribuir a variável 
+//                                         maior, da erro pq está misturando os tipos. Nesse tipo de questão, criasse uma variável para quantidade de 
+//                                         caracter e uma variável para receber o nome.  
+//                                         */ 
+//         }
+//     }
 
-let nome = [];
+//     return console.log(`A string com o maior valor dentro do Array é ${maiorNome}`);  // retorna o result da função 
+// }
 
-for (let i = 0; i < 5; i++) {
-    nome[i] = prompt(`Digite ${i + 1} nome:`);
-}
+// let nome = []; // declara o array 
 
-veri(nome); 
+// for (let i = 0; i < 5; i++) {
+//     nome[i] = prompt(`Digite ${i + 1} nome:`);      // preenche o array 
+// }
+
+// veri(nome); // chama a função 
+
+
+// 10) --------------------------------------------------------
+
+
+// function conta(frase){
+
+//     let result = frase.split(" ");
+
+//     return console.log(`Na frase fornecida, existem ${result.length} palavras.`); 
+// }
+
+// let frase = prompt("Digite uma palavra: "); 
+
+// conta(frase); 
+
+
+// 11) --------------------------------------------------------
+
+
