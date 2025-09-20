@@ -113,6 +113,30 @@
 // 6) --------------------------------------------------------
 
 
+// function calcu(ano, mes, dia) {
+//     return console.log( (ano * 365) + (mes * 30) + dia);  
+// }
+
+// let dataUsu = prompt("Digite sua data de nascimento no seguinte padrão( DD/MM/YYY ): ");
+
+// let sepa = dataUsu.split("/"); 
+
+// calcu(sepa[sepa.length - 1], sepa[1], sepa[0]); 
+
+
+// 7) --------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
