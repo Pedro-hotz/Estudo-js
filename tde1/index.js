@@ -214,4 +214,76 @@
 
 // 11) --------------------------------------------------------
 
+// function inverte(nome){
+//     return console.log(nome.split('').reverse().join('')); // Algoritmo para inverter o valor 
+// }
+
+// let nome = prompt("Digite seu nome: ");
+
+// inverte(nome); 
+
+
+// 12) --------------------------------------------------------
+
+/*  
+    Nessa questão, você vai criar uma constante para os meses e dias da semana conforme o modelo que o professor quer, Porque apartir das constantes 
+    declaradas você faz um calculo e pega a data conforme o objeto date pega. Como ele não quer que exiba nada e nem escreva nada, é só chamar a função direto. 
+
+*/
+
+// function mostraData(){
+
+//     const diasSemana = [
+//         "Segunda-feira", "Terça-feira", "Quarta-feira", 
+//         "Quinta-Feira", "Sexta-feira", "Sábado",
+//         "Domingo"
+//     ]; 
+
+//      const meses = [
+//         "janeiro", "fevereiro", "março", "abril", "maio", "junho",
+//         "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"
+//     ];
+
+//     var data = new Date; 
+
+//     let diaSe = data.getDay() - 1; 
+//     let diaM = data.getDate();
+//     let mes = data.getMonth() + 1;
+//     let ano = data.getFullYear(); 
+
+//     console.log(`Dia da semana: ${diasSemana[diaSe]}, dia do mês: ${diaM}, mês: ${meses[mes]},ano: ${ano}`);
+
+// }
+
+
+// mostraData()
+
+
+// 13) --------------------------------------------------------
+
+
+// function soma(num1, num2, num3){
+//     let result = (num1 + num2 + num3); 
+
+//     let medi = media(result);
+
+//     return console.log(`Soma: ${result}, Média: ${medi}`); 
+// }
+
+// function media(r){
+//     return (r / 3); 
+// }
+
+
+
+// let num1 = Number(prompt("Digite o 1º número: "));
+// let num2 = Number(prompt("Digite o 2º número: "));
+// let num3 = Number(prompt("Digite o 3º número: "));
+
+// soma(num1, num2, num3); 
+
+// 14) --------------------------------------------------------
+
+
+
 
