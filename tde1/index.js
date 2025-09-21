@@ -284,6 +284,30 @@
 
 // 14) --------------------------------------------------------
 
+// function media(num) {
+//     let soma = 0;
+
+//     for (let i = 0; i < 3; i++) {
+//         soma += num[i];
+//     }
+
+//     let media = (soma / 3);
+
+//     return console.log("A média dos 3 números é: " + media);
+// }
+
+// let num = [];
+
+// for (let i = 0; i < 3; i++) {
+//     num[i] = Number(prompt("Digite " + (i + 1) + " número: "));
+// }
+
+// media(num);
+
+
+// 15) --------------------------------------------------------
+
+
 
 
 
