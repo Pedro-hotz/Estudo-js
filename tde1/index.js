@@ -13,11 +13,8 @@
 
 // 2) ---------------------------------------------------------
 
-// let num1 = Number(prompt("Digite o primeiro número: ")); 
-// let num2 = Number(prompt("Digite o segundo número: ")); 
-
-
-// let escolha = Number(prompt(`
+// function calculadora(num1, num2) {
+//     let escolha = Number(prompt(`
 //     === ESCOLHA =====
 //     | [ 1 ] Soma              
 //     | [ 2 ] Subtração         
@@ -27,27 +24,34 @@
 //     ` + "Digite o número da operação que você quer realizar entre " + num1 + " e " + num2));
 
 
-// switch(escolha){
-//     case 1: // Soma 
-//     console.log("Você escolheu SOMA");
-//     console.log("A soma de " + num1 + " + " + num2 + " = " + (num1 + num2));
-//     break; 
+//     switch (escolha) {
+//         case 1: // Soma 
+//             console.log("Você escolheu SOMA");
+//             console.log("A soma de " + num1 + " + " + num2 + " = " + (num1 + num2));
+//             break;
 
-//     case 2: // Subtração 
-//     console.log("Você escolheu SUBTRAÇÃO");
-//     console.log("A subtração de " + num1 + " - " + num2 + " = " + (num1 - num2));
-//     break; 
+//         case 2: // Subtração 
+//             console.log("Você escolheu SUBTRAÇÃO");
+//             console.log("A subtração de " + num1 + " - " + num2 + " = " + (num1 - num2));
+//             break;
 
-//     case 3: // Multiplicação 
-//     console.log("Você escolheu MULTIPLICAÇÃO");
-//     console.log("A multiplicação de " + num1 + " X " + num2 + " = " + (num1 * num2));
-//     break; 
+//         case 3: // Multiplicação 
+//             console.log("Você escolheu MULTIPLICAÇÃO");
+//             console.log("A multiplicação de " + num1 + " X " + num2 + " = " + (num1 * num2));
+//             break;
 
-//     case 4: // Divisão 
-//     console.log("Você escolheu DIVISÃO");
-//     console.log("A divisão de " + num1 + " / " + num2 + " = " + (num1 / num2) );
-//     break; 
+//         case 4: // Divisão 
+//             console.log("Você escolheu DIVISÃO");
+//             console.log("A divisão de " + num1 + " / " + num2 + " = " + (num1 / num2));
+//             break;
+//     }
 // }
+
+
+// let num1 = Number(prompt("Digite o primeiro número: "));
+// let num2 = Number(prompt("Digite o segundo número: "));
+
+// calculadora(num1, num2);
 
 
 // 3) ---------------------------------------------------------
