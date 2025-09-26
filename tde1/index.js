@@ -311,7 +311,42 @@
 
 // 15) --------------------------------------------------------
 
-mesma lógica que a questão 12. 
+// function veri(num, numD){
+//     let result = []; 
+
+//     for (let i = 0; i < 4; i++ ){
+//         if (num[i] > numD){
+//             console.log(num[i]);
+//             result[i] = num[i];
+//         }
+//     }   
+
+//     return result;
+// }
+
+// let num = []
+
+// let numD = prompt("Digite um número: ");
+
+// for ( let i = 0; i < 4; i++){
+//     num[i] = Number(prompt("Digite 4 números: "));
+// } 
+
+// let r = veri(num, numD); 
+
+// console.log(`Número digitado foi ${numD}`);
+// console.log(`Array digitado foi ${num}`);
+// console.log(`Retorno da função ${r}`);
+
+
+// 16) --------------------------------------------------------
+
+
+
+
+
+
+
 
 
 
