@@ -369,4 +369,34 @@
 
 // 17) --------------------------------------------------------
 
+// let frase = "As pessoas costumam dizer que a motivação não dura sempre. Bem, nem o efeito do banho, por isso recomenda-se diariamente."
 
+// let r = frase.replace("motivação não dura sempre", "");
+
+
+// console.log(`${frase}`);
+// console.log(r + "...");
+
+
+// 18) -------------------------------------------------------- ????????
+
+function formatarMoeda(numero) {
+    // 1. Converte o input (string do prompt) para número
+    const valorNumerico = parseFloat(numero);
+
+    // 2. Formata como moeda brasileira (Real - BRL)
+    // 'pt-BR' garante a vírgula como separador decimal
+    // 'currency' garante o símbolo e 2 casas decimais
+    const resultadoFormatado = valorNumerico.toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
+    });
+
+    return resultadoFormatado;
+}
+
+let pal = prompt("Digite um número (Ex: 9.2): ");
+
+let r = formatarMoeda(pal);
+
+console.log(`${r}`);
