@@ -380,26 +380,26 @@
 
 // 18) -------------------------------------------------------- ????????
 
-function formatarMoeda(numero) {
-    // 1. Converte o input (string do prompt) para número
-    const valorNumerico = parseFloat(numero);
+// function formatarMoeda(numero) {
+//     // 1. Converte o input (string do prompt) para número
+//     const valorNumerico = parseFloat(numero);
 
-    // 2. Formata como moeda brasileira (Real - BRL)
-    // 'pt-BR' garante a vírgula como separador decimal
-    // 'currency' garante o símbolo e 2 casas decimais
-    const resultadoFormatado = valorNumerico.toLocaleString('pt-BR', {
-        style: 'currency',
-        currency: 'BRL'
-    });
+//     // 2. Formata como moeda brasileira (Real - BRL)
+//     // 'pt-BR' garante a vírgula como separador decimal
+//     // 'currency' garante o símbolo e 2 casas decimais
+//     const resultadoFormatado = valorNumerico.toLocaleString('pt-BR', {
+//         style: 'currency',
+//         currency: 'BRL'
+//     });
 
-    return resultadoFormatado;
-}
+//     return resultadoFormatado;
+// }
 
-let pal = prompt("Digite um número (Ex: 9.2): ");
+// let pal = prompt("Digite um número (Ex: 9.2): ");
 
-let r = formatarMoeda(pal);
+// let r = formatarMoeda(pal);
 
-console.log(`${r}`);
+// console.log(`${r}`);
 
 
-// 19) -------------------------------------------------------- ????????
+// 19) --------------------------------------------------------
