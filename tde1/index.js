@@ -400,3 +400,6 @@ let pal = prompt("Digite um número (Ex: 9.2): ");
 let r = formatarMoeda(pal);
 
 console.log(`${r}`);
+
+
+// 19) -------------------------------------------------------- ????????
