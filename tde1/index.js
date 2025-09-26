@@ -341,12 +341,32 @@
 
 // 16) --------------------------------------------------------
 
+// function junta(array1, array2){
+//     for(let i = 0; i < 4; i++){
+//         array1.push(array2[i]);
+//     }
+//     return array1;
+// }
+
+// let array1 = [];
+// let array2 = []; 
 
 
+// for(let i = 0; i < 3; i++){
+//     array1[i] = prompt("Digite 3 nomes [ ARRAY 1 ]: ");
+// }
+
+// for(let i = 0; i < 3; i++){
+//     array2[i] = prompt("Digite 3 nomes [ ARRAY 2 ]: ");
+// }
+
+// let r = junta(array1, array2); 
+
+// console.log(`${array1}`); 
+// console.log(`${array2}`); 
+// console.log(`${r}`); 
 
 
-
-
-
+// 17) --------------------------------------------------------
 
 
