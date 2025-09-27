@@ -403,3 +403,64 @@
 
 
 // 19) --------------------------------------------------------
+
+// function func(valor){
+
+//     let num = Math.floor(Math.random() * 9) + 1;
+//     let valorFunc = 0;
+
+//     // algoritmo para a programa escolher um aleatório 
+//     if(num ==  1 || num == 4 || num == 7){
+//         // pedra
+//         console.log("O programa escolheu ( PEDRA )");
+//         valorFunc = 1;
+//     } else  if(num == 2 || num == 5 || num == 8 ){
+//         // tesoura
+//         console.log("O programa escolheu ( TESOURA )");
+//         valorFunc = 3;
+//     } else {
+//         // papel
+//         console.log("O programa escolheu ( PAPEL )");
+//         valorFunc = 2;
+//     }
+
+//     if (valor === valorFunc) {
+//         console.log("Empate!");
+
+//     } else if ((valor == 1 && valorFunc == 3) || // Pedra ganha Tesoura
+//                (valor == 2 && valorFunc == 1) || // Papel ganha Pedra
+//                (valor == 3 && valorFunc == 2) ){ // Tesoura ganha Papel
+//                 // nesse else if ele faz a verificação de cada variável usando o operador lógico &&. 
+//                 // se for 1 e 3, vai retornar verdadeiro e executa.  
+   
+//         console.log("Você venceu!");
+
+//     } else {
+//         console.log("Você perdeu!");
+//     }
+//     return 0;
+// }
+
+// let escolha = prompt("Digite um opção (PEDRA, PAPEL, TESOURA): ");
+// let valor = 0;
+
+// escolha = escolha.toLowerCase()
+
+// if (escolha == "pedra"){
+//     valor = 1; 
+// } else if (escolha == "papel"){
+//     valor = 2;
+// } else if (escolha == "tesoura") {
+//     valor = 3;
+// } else {
+//     console.log("Erro !");
+// }
+
+// func(valor);
+
+
+// 20) --------------------------------------------------------
+
+
+
+
