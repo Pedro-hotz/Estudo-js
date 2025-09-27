@@ -629,4 +629,29 @@
 
 // 25) -------------------------------------------------------- 
 
+// let escola = {
+//     numAlu: this.numAlu,
+//     nomeD: this.nomeD,
+//     anoF: this.anoF,
+//     end: {
+//     rua: this.rua,
+//     bairro: this.bairro,
+//     cidade: this.cidade
+// }}
 
+// escola.numAlu = Number(prompt("Digite a qtd de alunos: "));
+// escola.nomeD = prompt("Digite o nome do diretor: ");
+// escola.anoF = Number(prompt("Digite o ano de fundação: "));
+
+// escola.end.rua = prompt("Digite a rua: ");
+// escola.end.bairro = prompt("Digite o bairro: "); 
+// escola.end.cidade = prompt("Digite a cidade: ");
+
+// console.log(`
+//     ${escola.numAlu}
+//     ${escola.nomeD}
+//     ${escola.anoF }
+//     ${escola.end.rua}
+//     ${escola.end.bairro}
+//     ${escola.end.cidade}
+//     `)
