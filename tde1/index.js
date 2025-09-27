@@ -432,7 +432,7 @@
 //                (valor == 3 && valorFunc == 2) ){ // Tesoura ganha Papel
 //                 // nesse else if ele faz a verificação de cada variável usando o operador lógico &&. 
 //                 // se for 1 e 3, vai retornar verdadeiro e executa.  
-   
+
 //         console.log("Você venceu!");
 
 //     } else {
@@ -465,7 +465,7 @@
 //     // equilatero todos 
 //     // isósceles 1 desigual 
 //     // escaleno todos desigual 
-    
+
 //     if( (num[0] == num[1] ) && (num[1] == num[2]) && (num[0] == num[2])){
 //         console.log(`Triângulo equilatero`);
 //     } else if(((num[0] == num[1]) || (num[1] == num[2]) || (num[0] == num[2]))  ) {
@@ -484,6 +484,92 @@
 
 
 // calc(num);
+
+
+// 21) --------------------------------------------------------
+
+
+// ============================== FAZENDO POR CLASSE ===============================
+
+// function calc(pessoas){
+//     let op1 = pessoas.filter(p => p.sexo.toLowerCase() == "m").length; // filtra todos os sexo "M"
+//     let op2 = pessoas.filter(p => p.altura > 1.70).length; 
+//     let maior = 0;
+//     let maiorSx;
+
+
+//     for(let i = 0; i < pessoas.length; i++){     // lógica simples de verificação de maior 
+//     if(pessoas[i].altura > maior){               // [i] em pessoas porque o pessoas é um array e não "sexo" e nem "altura"
+//         maior = pessoas[i].altura;
+//         maiorSx = pessoas[i].sexo;  
+//     }
+// }
+//     console.log(`Pessoas do sexo masculino: ${op1} \n\nPessoas são maiores de 1.70m: ${op2} \n\n Maior altura e se essa altura é de um homem ou uma mulher: ${maior} - ${maiorSx}`);
+
+// }
+
+// class Pessoa {                                    // declaração de classe 
+//     constructor(sexo, altura){                    // igual java ( CONSTRUCTOR )
+//         this.altura = altura;
+//         this.sexo = sexo;
+//     }
+// }
+
+// let pessoas = [];
+
+// for(let i = 0; i < 5; i++){                                                 // TROCAR ESSA MERDA DE 2 PARA 5 
+//     let sexo = prompt("Digite o sexo da pessoa:  ");
+//     let altura = Number(prompt("Digite o altura da pessoa:  "));
+
+//     let p = new Pessoa(sexo, altura);             // intância a classe Pessoa 
+//     pessoas.push(p);                              // adiciona a classe Pessoa no final de um array 
+// }
+
+// console.log(pessoas);
+
+// calc(pessoas);
+
+
+// ============================== FAZENDO POR OBJETO ===============================
+
+// function calc(pessoas) {
+
+//     let op1 = pessoas.filter(p => p.sexo.toLowerCase() == "m").length;
+//     let op2 = pessoas.filter(p => p.altura > 1.70).length;
+
+//     let maior = 0;
+//     let maiorSx;
+
+//     for (let i = 0; i < pessoas.length; i++) {
+//         if (pessoas[i].altura > maior) {
+//             maior = pessoas[i].altura;
+//             maiorSx = pessoas[i].sexo;
+//         }
+//     }
+//     console.log(`sexo masculino: ${op1} \n\nMaior que 1.70: ${op2} \n\nMaior altura e seu sexo: ${maior} - ${maiorSx}`);
+// }
+
+
+
+
+// let pessoas = [];
+
+// for (let i = 0; i < 2; i++) {
+
+//     let pessoa = {
+//         sexo: this.sexo,
+//         altura: this.altura
+//     };
+
+//     pessoa.sexo = prompt("Digite sexo: ");
+//     pessoa.altura = prompt("Digite altura: ");
+
+//     pessoas.push(pessoa);
+// }
+
+// console.log(pessoas);
+
+// calc(pessoas);
 
 
 // 21) --------------------------------------------------------
