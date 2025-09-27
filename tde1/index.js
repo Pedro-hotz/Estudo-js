@@ -671,7 +671,7 @@ let carro = {
         let date = new Date;
         let anoAtual = date.getFullYear();
 
-        let result = this.pcBase - ((anoAtual - this.ano) * 1000);
+        let result = this.pcBase - 1000 * ((anoAtual - this.ano));
 
         return result;
     }
