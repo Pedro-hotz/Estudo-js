@@ -461,6 +461,29 @@
 
 // 20) --------------------------------------------------------
 
+// function calc(num){
+//     // equilatero todos 
+//     // isósceles 1 desigual 
+//     // escaleno todos desigual 
+    
+//     if( (num[0] == num[1] ) && (num[1] == num[2]) && (num[0] == num[2])){
+//         console.log(`Triângulo equilatero`);
+//     } else if(((num[0] == num[1]) || (num[1] == num[2]) || (num[0] == num[2]))  ) {
+//         console.log(`Triângulo isósceles`);
+//     } else {
+//         console.log(`Triângulo escaleno`);
+//     }
+// }
 
 
+// let num = []
 
+// for(let i = 0; i < 3; i++){
+//     num[i] = prompt(`Digite ${i+1} valor: `); 
+// }
+
+
+// calc(num);
+
+
+// 21) --------------------------------------------------------
