@@ -550,8 +550,6 @@
 // }
 
 
-
-
 // let pessoas = [];
 
 // for (let i = 0; i < 2; i++) {
@@ -573,3 +571,23 @@
 
 
 // 21) --------------------------------------------------------
+
+
+// class Pais {
+//     constructor(pais, continente, capital) {
+//         this.pais = pais;
+//         this.continente = continente;
+//         this.capital = capital;
+//     }
+// }
+
+// Pais.pais = prompt("Digite um pais: ");
+// Pais.continente = prompt("Digite a continente: ");
+// Pais.capital = prompt("Digite a capital: ");
+
+
+
+// console.log(Pais.pais, Pais.continente, Pais.capital);
+
+
+// 21) -------------------------------------------------------- 
