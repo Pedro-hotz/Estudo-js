@@ -555,8 +555,8 @@
 // for (let i = 0; i < 2; i++) {
 
 //     let pessoa = {
-//         sexo: this.sexo,
-//         altura: this.altura
+//         sexo: "",
+//         altura: 0
 //     };
 
 //     pessoa.sexo = prompt("Digite sexo: ");
@@ -593,10 +593,10 @@
 // 23) -------------------------------------------------------- 
 
 // let pessoa = {
-//     nome: this.nome,
-//     idade: this.idade,
-//     email: this.email,
-//     sexo: this.sexo
+//     nome: "",
+//     idade: 0,
+//     email: "",
+//     sexo: ""
 // }
 
 // pessoa.nome = prompt("Digite seu nome: ");
@@ -630,13 +630,13 @@
 // 25) -------------------------------------------------------- 
 
 // let escola = {
-//     numAlu: this.numAlu,
-//     nomeD: this.nomeD,
-//     anoF: this.anoF,
+//     numAlu: "",
+//     nomeD: "",
+//     anoF: 0,
 //     end: {
-//     rua: this.rua,
-//     bairro: this.bairro,
-//     cidade: this.cidade
+//     rua: "",
+//     bairro: "",
+//     cidade: ""
 // }}
 
 // escola.numAlu = Number(prompt("Digite a qtd de alunos: "));
@@ -655,3 +655,40 @@
 //     ${escola.end.bairro}
 //     ${escola.end.cidade}
 //     `)
+
+
+// 26) -------------------------------------------------------- 
+
+
+let carro = {
+    modelo: "",
+    estado: "",
+    pcBase: 0,
+    ano: 0,
+
+
+    calc() {
+        let date = new Date;
+        let anoAtual = date.getFullYear();
+
+        let result = this.pcBase - ((anoAtual - this.ano) * 1000);
+
+        return result;
+    }
+}
+
+
+carro.modelo = prompt("Digite o modelo do carro: ");
+carro.estado = prompt("Digite o modelo do estado: ");
+carro.pcBase = Number(prompt("Digite o modelo do pcBase: "));
+carro.ano = Number(prompt("Digite o modelo do ano: "));
+
+let r = carro.calc();
+
+console.log(`
+    modelo: ${carro.modelo}
+    estado: ${carro.estado}
+    pcBase: ${carro.pcBase}
+    ano: ${carro.ano}
+    valor estimado: ${r}
+    `)
