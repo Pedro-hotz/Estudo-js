@@ -570,7 +570,7 @@
 // calc(pessoas);
 
 
-// 21) --------------------------------------------------------
+// 22) --------------------------------------------------------
 
 
 // class Pais {
@@ -590,4 +590,22 @@
 // console.log(Pais.pais, Pais.continente, Pais.capital);
 
 
-// 21) -------------------------------------------------------- 
+// 23) -------------------------------------------------------- 
+
+// let pessoa = {
+//     nome: this.nome,
+//     idade: this.idade,
+//     email: this.email,
+//     sexo: this.sexo
+// }
+
+// pessoa.nome = prompt("Digite seu nome: ");
+// pessoa.idade = Number(prompt("Digite seu idade: "));
+// pessoa.email = prompt("Digite seu email: ");
+// pessoa.sexo = prompt("Digite seu sexo: ");
+
+
+// console.log(`${pessoa.nome} \n\n${pessoa.idade} \n\n${pessoa.email} \n\n${pessoa.sexo}`);
+
+
+// 24) -------------------------------------------------------- 
