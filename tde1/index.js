@@ -609,3 +609,24 @@
 
 
 // 24) -------------------------------------------------------- 
+
+// let fruta = {
+//     cor: "amarelo", 
+//     tam: "medio",
+//     pais: "Br"
+// }
+
+// fruta.cor = prompt("Digite uma cor:");
+// fruta.tam = prompt("Digite uma tamanho (pequena, média ou grande):");
+// fruta.pais = prompt("Digite um pais: ");
+
+// console.log(`
+//     ${fruta.cor} 
+//     ${fruta.tam}
+//     ${fruta.pais}
+//     `);
+
+
+// 25) -------------------------------------------------------- 
+
+
