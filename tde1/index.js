@@ -660,35 +660,35 @@
 // 26) -------------------------------------------------------- 
 
 
-let carro = {
-    modelo: "",
-    estado: "",
-    pcBase: 0,
-    ano: 0,
+// let carro = {
+//     modelo: "",
+//     estado: "",
+//     pcBase: 0,
+//     ano: 0,
 
 
-    calc() {
-        let date = new Date;
-        let anoAtual = date.getFullYear();
+//     calc() {
+//         let date = new Date;
+//         let anoAtual = date.getFullYear();
 
-        let result = this.pcBase - 1000 * ((anoAtual - this.ano));
+//         let result = this.pcBase - 1000 * ((anoAtual - this.ano));
 
-        return result;
-    }
-}
+//         return result;
+//     }
+// }
 
 
-carro.modelo = prompt("Digite o modelo do carro: ");
-carro.estado = prompt("Digite o modelo do estado: ");
-carro.pcBase = Number(prompt("Digite o modelo do pcBase: "));
-carro.ano = Number(prompt("Digite o modelo do ano: "));
+// carro.modelo = prompt("Digite o modelo do carro: ");
+// carro.estado = prompt("Digite o modelo do estado: ");
+// carro.pcBase = Number(prompt("Digite o modelo do pcBase: "));
+// carro.ano = Number(prompt("Digite o modelo do ano: "));
 
-let r = carro.calc();
+// let r = carro.calc();
 
-console.log(`
-    modelo: ${carro.modelo}
-    estado: ${carro.estado}
-    pcBase: ${carro.pcBase}
-    ano: ${carro.ano}
-    valor estimado: ${r}
-    `)
+// console.log(`
+//     modelo: ${carro.modelo}
+//     estado: ${carro.estado}
+//     pcBase: ${carro.pcBase}
+//     ano: ${carro.ano}
+//     valor estimado: ${r}
+//     `)
