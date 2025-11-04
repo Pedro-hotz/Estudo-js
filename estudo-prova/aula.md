@@ -25,6 +25,14 @@
 
 - Funções 
 
+    Function nomeFunc(parâmetro){
+
+        Manipula o dado
+
+    Return x (x vai ser o retorno da função)
+    }
+
+
 
 - Objetos - construtoras 
 
@@ -137,6 +145,7 @@
 
 
 - arrays 
+
     # SEMPRE QUE USAR ARRAYS, CRIE A VARIÁVEL NO PLURAL 
 
     + push          => array.push(elemento1, elemento2, ...); 
