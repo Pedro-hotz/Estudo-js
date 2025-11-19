@@ -57,18 +57,28 @@ xX.addListener('ação', function) => Fica esperando a ação acontecer
     }
 
 
----------------------------------- 
+-----------------------------------------------------------------
 
-- innerText => Pega o texto mas sem <Strong> por exemplo 
+- innerText = "" => Pega o texto mas sem <Strong> por exemplo 
 
-- innerHtml => pega o texto e tags 
+- innerHtml = `` => pega o texto e tags 
 
 - onclick => (usa dentro do atributo no html ) chama uma função 
 
 
 
+classList ---------------------------------------------------------
 
 
+XXX.classList.add("YY")                      => Adiciona uma classe com o nome YY no XXX 
+
+XXX.classList.remove("YY")                   => Remove a classe  
+
+XXX.classList.toggle("YY")                   => Alterna a classe: adiciona se ela não estiver presente e remove se ela estiver.
+
+XXX.classList.contains("alerta")             => Verifica se a classe especificada está presente no elemento, retornando true ou false.
+
+XXX.classList.item(0)                        => Retorna o nome da classe pelo seu índice na lista (útil, mas menos comum).
 
 
-
+----
