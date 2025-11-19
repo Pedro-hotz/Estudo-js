@@ -8,13 +8,13 @@ form.addEventListener("submit", function (event) {
 function validarForm() {
     let nome = document.getElementById("nome").value;
     let inputEmail = document.getElementById("email").value;
-    let inputIdade = document.getElementById("idade");
+    let inputIdade = document.getElementById("idade").value;
 
-    let indArroba = inputEmail.value.indexOf("@");
-    let indPonto = inputEmail.value.lastIndexOf(".");
+    let indArroba = inputEmail.indexOf("@");
+    let indPonto = inputEmail.lastIndexOf(".");
 
-    let rock = document.getElementById("rock").checked;
-    let pop = document.getElementById("pop").checked;
+    let rock = document.getElementById("rock");
+    let pop = document.getElementById("pop");
 
     if (nome.length < 3) {
         alert("Nome deve ter pelo menos 3 caracteres.");
