@@ -1,0 +1,66 @@
+📝 Fundamentos de JavaScript
+
+✔ Eventos (onclick, onload, keydown, addEventListener)
+
+
+
+======================================================================================
+🌐 DOM – Manipulação de Elementos
+
+✔ innerHTML, textContent – alterar conteúdo
+✔ style – alteração de estilos via JavaScript
+✔ classList.add, classList.remove, classList.toggle, classList.contains
+✔ Criar e remover elementos: createElement, appendChild, removeChild
+
+
+
+=====================================================================================
+🎨 Manipulação de Classes e Estilos
+
+✔ Adicionar/Remover Classes
+✔ Alternar classes (toggle)
+✔ Modificar CSS via JS (element.style.property)
+
+
+
+=====================================================================================
+🧠 Eventos do DOM
+
+✔ click
+✔ onload
+✔ keyup, keydown, keypress (eventos de teclado)
+✔ Uso do this dentro de funções de evento
+✔ addEventListener e Delegação de eventos (event bubbling)
+
+
+
+=====================================================================================
+🧾 Formulários e Validação
+
+✔ Capturar valores de inputs (value)
+✔ Verificar se campos estão vazios
+✔ Validar texto (tamanho, palavras obrigatórias — includes, length)
+✔ Validar datas (Date(), comparação de datas)
+✔ Validar e-mail (uso básico de regex ou lógica com "@" e ".")
+✔ Checkboxes e Radio buttons (mínimo de seleções)
+✔ Comparar senha e confirmar senha
+✔ Prevenção de submit com event.preventDefault()
+
+
+
+====================================================================================
+👨‍💻 Técnicas mais avançadas
+
+✔ Event Delegation (exercício 14 – clicar no <ul> e alterar os <li>)
+✔ Uso do this para capturar o elemento clicado
+✔ Capturar elementos específicos dentro de uma linha (tr > td)
+✔ Trabalho com datas em JavaScript (new Date())
+
+
+
+=====================================================================================
+🚨 Extras recomendados
+
+🔹 Template strings (${})
+🔹 Conversão de tipos (String, Number)
+🔹 Arrow functions (=>)

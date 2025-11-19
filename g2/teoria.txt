@@ -1,0 +1,74 @@
+
+
+
+============= DOM ===================
+
+window => janela atual 
+
+document => documento atual 
+
+child => filhos 
+
+parent => pai 
+
+
+xX.addListener('ação', function) => Fica esperando a ação acontecer 
+
+
+------------- Modos de acessar ----------------
+
++ marca { 
+
+    document.getElementsByTagName('') => caso queria pegar um paragráfo específico acrescente "[num-do-paragráfo]" começa em 0 igual array
+
+        }
+
++ id {
+
+    getElementById() => único que é no singular 
+
+    
+
+    }
+
++ nome {
+
+    getElementsByName() => caso queria pegar um paragráfo específico acrescente "[num-do-paragráfo]" começa em 0 igual array
+
+    } 
+
++ seletor {
+
+    querySelector(#papo) => id papo
+
+
+    querySelectorAll()
+
+    id => # 
+
+    class => .
+
+    }
+
++ classe {
+
+    getElementsByClassName()
+
+    }
+
+
+---------------------------------- 
+
+- innerText => Pega o texto mas sem <Strong> por exemplo 
+
+- innerHtml => pega o texto e tags 
+
+- onclick => (usa dentro do atributo no html ) chama uma função 
+
+
+
+
+
+
+
+

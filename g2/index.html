@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .fe {
+            background-color: aqua;
+            width: 60px;
+            height: 60px;
+
+            color: black;
+        }
+    </style>
+
+<body>
+
+    <div class="fe" onclick="clicou()">
+        <p id="t">
+            Clicou ! 
+        </p>
+    </div>
+    
+
+    <script> 
+
+        let a = document.querySelector("#t")
+
+        function clicou(){
+            a.innerText = "Clicou vadia"
+        }
+
+    </script>
+</body>
+</html>
