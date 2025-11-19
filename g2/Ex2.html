@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .azul {
+            background-color: blue;
+        }
+
+        .vermelho {
+            background-color: red;
+        }
+ </style>
+
+<body>
+
+    <table id="tabela">
+        <tr class="azul">
+            <td>João</td>
+            <td>40</td>
+        </tr>
+        <tr class="vermelho">
+            <td>Maria</td>
+            <td>50</td>
+        </tr>
+        <tr class="azul">
+            <td>Ana</td>
+            <td>20</td>
+        </tr>
+    </table>
+
+    <button onclick="muda()">Mudar</button>
+
+    <script>
+
+        let linhasAzuis = document.querySelectorAll(".azul")
+        let linhasVermelhas = document.querySelectorAll(".vermelho")
+
+        function muda() {
+
+            // Bate nas linhas azuis
+            linhasAzuis.forEach(linha => {
+                // mudar de azul para vermelho. 
+                linha.classList.toggle("azul"); // todas vez que usar toggle, usar duas vezes se quiser alterar por um valor
+                linha.classList.toggle("vermelho");
+            });
+
+            // Bate em todas as linhas vermelhas
+            linhasVermelhas.forEach(linha => {
+                linha.classList.toggle("vermelho");
+                linha.classList.toggle("azul");
+            });
+        }
+
+    </script>
+</body>
+
+</html>

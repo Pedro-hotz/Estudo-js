@@ -39,10 +39,10 @@ xX.addListener('ação', function) => Fica esperando a ação acontecer
 
 + seletor {
 
-    querySelector(#papo) => id papo
 
+    querySelector(#papo)
 
-    querySelectorAll()
+    querySelectorAll()    => Todas vez que usar querySelectorAll, é preciso usar um forEach para mudar todos os elementos 
 
     id => # 
 
@@ -81,4 +81,14 @@ XXX.classList.contains("alerta")             => Verifica se a classe especificad
 XXX.classList.item(0)                        => Retorna o nome da classe pelo seu índice na lista (útil, mas menos comum).
 
 
-----
+style -------------------------------------------------------------
+
+    style.backgroundColor => muda o fundo 
+
+
+Ancestraliedade ---------------------------------------------------
+
++ .closest('') => pega os que estão a cima 
+
++ .parentNode => pega o pai 
+

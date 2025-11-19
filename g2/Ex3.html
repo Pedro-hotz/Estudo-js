@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="tabela">
+        <tr>
+            <td>João</td>
+            <td class="nota">6</td>
+            <td>
+                <button onclick="veri(this)">Checar aprovação</button>
+            </td>
+        </tr>
+        <tr>
+
+            <td>Maria</td>
+            <td class="nota">8</td>
+            <td>
+                <button onclick="veri(this)">Checar aprovação</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td class="nota">5</td>
+            <td>
+                                <!-- Retorna essa linha com parâmetro-->
+                <button onclick="veri(this)">Checar aprovação</button>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function veri(btn) {
+
+            // pega o ancestral 
+            let linha = btn.closest('tr');
+            let nota = linha.querySelector(".nota");
+
+            if (nota.textContent > 5) {
+                linha.style.backgroundColor = 'green'
+            } else {
+                linha.style.backgroundColor = 'red'
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
