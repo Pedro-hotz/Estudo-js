@@ -1,1 +1,23 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="card">Este é o elemento div</div>
+
+    <script>
+        let e = document.getElementById('card');
+
+
+      // verifica se existe a classe returna true
+        if (e.classList.contains('card')) ; 
+            e.classList.add('principal');
+        } else {
+            e.classList.add('card');
+        }
+    </script>
+</body>
+</html>
