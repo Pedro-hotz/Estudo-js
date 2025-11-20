@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #card {
+            border: 3px dotted green;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="card">Este é o card com borda inicial.</div>
+
+    <script>
+        window.onload = function () {
+            let card = document.getElementById('card');
+
+            card.style.border = '4px dashed orange';
+        };
+    </script>
+</body>
+
+</html>

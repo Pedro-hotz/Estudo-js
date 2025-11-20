@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <form id="formEmpresa">
+        <label>Nome da Empresa:</label>
+        <br>
+        <input type="text" id="nomeEmpresa">
+        <br><br>
+
+        <label>Data de Fundação:</label>
+        <br>
+        <input type="date" id="dataFundacao">
+        <br><br>
+
+
+        <label>E-mail:</label>
+        <br>
+        <input type="text" id="email">
+
+        <br>
+        <br>
+
+
+        <label>Descrição (máx. 50 caracteres):</label>
+        <br>
+        <textarea id="descricao" maxlength="50"></textarea>
+        <br><br>
+
+
+        <label>Atuações:</label>
+        <br>
+        <input type="checkbox" id="vendas" value="Vendas"> Vendas
+        <br>
+        <input type="checkbox" id="marketing" value="Marketing"> Marketing
+        <br>
+        <input type="checkbox" id="aplicativos" value="Aplicativos"> Aplicativos
+        <br><br>
+
+        <button type="button" id="btnEnviar">Enviar</button>
+    </form>
+
+    <script>
+        let botao = document.getElementById("btnEnviar");
+
+        botao.addEventListener("click", function () {
+            let nome = document.getElementById("nomeEmpresa").value.trim();
+            let data = document.getElementById("dataFundacao").value;
+            let email = document.getElementById("email").value.trim();
+            let desc = document.getElementById("descricao").value.trim();
+
+            let vendas = document.getElementById("vendas").checked;
+            let mkt = document.getElementById("marketing").checked;
+            let app = document.getElementById("aplicativos").checked;
+
+            if (nome.length < 4 || nome.indexOf("SA") === -1) {
+                alert("Nome inválido! Deve ter 4+ caracteres e conter 'SA'.");
+                return;
+            }
+
+
+            let dataMin = new Date("2000-01-01");
+            let dataa = new Date(data);
+
+            if (!(dataa > dataMin)) {
+                alert("Data de fundação deve ser maior que 01/01/2000.");
+                return;
+            }
+
+            let arro = email.indexOf("@");
+            let ponto = email.lastIndexOf(".");
+
+            if (
+                arro === -1 ||
+                ponto === -1 ||
+                arro > ponto ||
+                (ponto - arro) < 2
+            ) {
+                alert("E-mail inválido!");
+                return;
+            }
+
+            if (desc.length > 50) {
+                alert("Descrição deve ter no máximo 50 caracteres.");
+                return;
+            }
+
+            if (!(vendas || mkt || app)) {
+                alert("Selecione pelo menos uma atuação.");
+                return;
+            }
+
+            alert("Tudo certo! Dados válidos.");
+        });
+    </script>
+
+</body>
+
+</html>

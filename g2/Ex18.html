@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <form id="formCadastro">
+        <label>Login (máx. 8 caracteres):</label><br>
+        <input type="text" id="login"><br><br>
+
+        <label>Idade:</label><br>
+        <input type="number" id="idade"><br><br>
+
+        <label>Gênero:</label><br>
+        <input type="radio" name="genero" id="masc" value="Masculino"> Masculino <br>
+        <input type="radio" name="genero" id="fem" value="Feminino"> Feminino <br>
+        <input type="radio" name="genero" id="nao" value="Não informado"> Não informado <br><br>
+
+        <label>Preferências Musicais:</label><br>
+        <input type="checkbox" id="rock" value="Rock"> Rock <br>
+        <input type="checkbox" id="mpb" value="MPB"> MPB <br>
+        <input type="checkbox" id="funk" value="Funk"> Funk <br>
+        <input type="checkbox" id="pop" value="Pop"> Pop <br><br>
+
+        <label>Senha:</label><br>
+        <input type="password" id="senha"><br><br>
+
+        <label>Confirmar Senha:</label><br>
+        <input type="password" id="confirmar"><br><br>
+
+        <button type="button" id="btnEnviar">Enviar</button>
+    </form>
+
+    <script>
+        let botao = document.getElementById("btnEnviar");
+
+        botao.addEventListener("click", function () {
+            let login = document.getElementById("login").value.trim();
+            let idade = parseInt(document.getElementById("idade").value);
+
+            let generoMasc = document.getElementById("masc").checked;
+            let generoFem = document.getElementById("fem").checked;
+            let generoNao = document.getElementById("nao").checked;
+
+            let rock = document.getElementById("rock").checked;
+            let mpb = document.getElementById("mpb").checked;
+            let funk = document.getElementById("funk").checked;
+            let pop = document.getElementById("pop").checked;
+
+            let senha = document.getElementById("senha").value;
+            let confirmar = document.getElementById("confirmar").value;
+
+
+
+            if (login.length > 8 || login.length === 0) {
+                alert("Login inválido! Deve ter até 8 caracteres.");
+                return;
+            }
+
+
+            if (isNaN(idade) || idade <= 12) {
+                alert("Idade deve ser maior que 12 anos.");
+                return;
+            }
+
+
+            if (!(generoMasc || generoFem || generoNao)) {
+                alert("Selecione um gênero.");
+                return;
+            }
+
+            let qtdMsc = 0;
+            if (rock) qtdMsc++;
+            if (mpb) qtdMcs++;
+            if (funk) qtdMcs++;
+            if (pop) qtdMcs++;
+
+            if (qtdMusicas < 2) {
+                alert("Selecione pelo menos 2 preferências musicais.");
+                return;
+            }
+
+            if (senha !== confirmar) {
+                alert("As senhas não são iguais.");
+                return;
+            }
+
+            if (senha.length < 4 || senha.length > 10) {
+                alert("Senha deve ter entre 4 e 10 caracteres.");
+                return;
+            }
+
+            alert("Dados ok");
+        });
+    </script>
+
+</body>
+
+</html>

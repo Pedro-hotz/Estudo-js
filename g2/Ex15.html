@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="input" placeholder="Digite algo...">
+
+    <script>
+        function verificarTecla(evento) {
+            let tecla = evento.key;
+
+            if (tecla === "a" || tecla === "A") {
+                alert("Letra a digitada");
+            }
+        }
+
+        let campo = document.getElementById("input");
+        campo.addEventListener("keydown", verificarTecla);
+    </script>
+
+</body>
+
+</html>

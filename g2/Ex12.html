@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>Maçã</li>
+        <li>Banana</li>
+        <li>Manga</li>
+    </ul>
+
+    <script>
+        let i = document.querySelectorAll('li');
+
+        i.forEach(function (item) {
+            item.addEventListener('click', function () {
+                alert(this.textContent);
+            });
+        });
+    </script>
+</body>
+
+</html>

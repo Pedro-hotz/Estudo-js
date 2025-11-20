@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
 
+
+    <form id="formFuncionario">
+        <label>Nome:</label><br>
+        <input type="text" id="nome"><br><br>
+
+        <label>Cargo:</label><br>
+        <input type="text" id="cargo"><br><br>
+
+        <label>Salário:</label><br>
+        <input type="number" id="salario"><br><br>
+
+        <label>Setor:</label><br>
+        <select id="setor">
+            <option value="RH">RH</option>
+            <option value="Limpeza">Limpeza</option>
+            <option value="Desenvolvimento">Desenvolvimento</option>
+        </select>
+        
+        <br>
+        <br>
+
+        <button type="button" id="btnEnviar">Enviar</button>
+    </form>
+
+    <script>
+        let botao = document.getElementById("btnEnviar");
+
+        botao.addEventListener("click", function () {
+            let nome = document.getElementById("nome").value;
+            let cargo = document.getElementById("cargo").value;
+            let salario = document.getElementById("salario").value;
+            let setor = document.getElementById("setor").value;
+
+            alert(
+                "Nome: " + nome +
+                "\nCargo: " + cargo +
+                "\nSalário: " + salario +
+                "\nSetor: " + setor
+            );
+        });
+    </script>
+
+</body>
+</html>

@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <span>olá</span>
+    </div>
+
+    <script>
+        let contai = document.getElementById('container');
+
+        contai.addEventListener('click', function () {
+            let spanF = this.querySelector('span');
+            spanF.textContent = 'teste';
+        });
+    </script>
+</body>
+
+</html>

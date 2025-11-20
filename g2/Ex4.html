@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="mensagem">
+    </div>
+
+
+    <script>
+        
+        let m = document.querySelector(".mensagem") // acessa a class mensagem 
+
+        let sp = document.createElement('span')    // cria o elemento span e armazena na variável 
+
+        sp.textContent = 'Olá mundo';   // adiciona o texto dentro do elemento 
+
+        m.appendChild(sp) // adiciona como filho a variável 
+
+    </script>
+</body>
+</html>

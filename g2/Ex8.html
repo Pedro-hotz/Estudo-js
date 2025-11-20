@@ -1,1 +1,24 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <span>Este é um span.</span>
+
+    <script>
+        window.onload = function() {
+            
+            // pega os spans
+            let spa = document.querySelectorAll('span');
+            
+            // sempre que fizer queryAll, faz forEach 
+            spa.forEach(function(elemento) {
+                elemento.style.color = 'green';
+            });
+        };
+    </script>
+</body>
+</html>
