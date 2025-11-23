@@ -7,50 +7,58 @@
     <title>Document</title>
 </head>
 
-
-    <style>
-        .azul {
-            background-color: blue;
-            
-        }
-
-        .vermelho {
-            background-color: red;
-        }
-    </style>
+<style> 
+    .green {
+        background-color: green;
+    }
+</style>
 
 <body>
 
     <table id="tabela">
-        <tr class="azul">
+        <tr>
             <td>João</td>
-            <td>40</td>
+            <td class="nota">6</td>
+            <td>
+                <button onclick="veri(this)">Checar aprovação</button>
+            </td>
         </tr>
-        <tr class="vermelho">
+        <tr>
+
             <td>Maria</td>
-            <td>50</td>
+            <td class="nota">8</td>
+            <td>
+                <button onclick="veri(this)">Checar aprovação</button>
+            </td>
         </tr>
-        <tr class="azul">
+        <tr>
             <td>Ana</td>
-            <td>20</td>
+            <td class="nota">5</td>
+            <td>
+                <button onclick="veri(this)">Checar aprovação</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td class="nota">3</td>
+            <td>
+                <button onclick="veri(this)">Checar aprovação</button>
+            </td>
         </tr>
     </table>
 
+
     <script>
 
-        let azuis = document.querySelectorAll('.azul') // pega todos os elementos com a class azul 
-        let verms = document.querySelectorAll('.vermelho')
+        function veri(btn) {
 
+            let pai = btn.closest('tr');  // sobe até o pai 
+            let nota = pai.querySelector('.nota');  // procura a classe nota 
 
-        azuis.forEach( azul => {
-            azul.classList.remove('azul') // remove a classe azul 
-            azul.classList.add('vermelho') // adiciona vermelho aonde era azul e foi removido 
-        })
-
-        verms.forEach( verm => {
-            verm.classList.remove('vermelho')
-            verm.classList.add('azul')
-        })
+            if ( Number(nota.textContent) >= 5) { // pega o texto da classe nota e verifica se é menor que 5 
+                pai.classList.add('green') // adiciona uma class 
+            }
+        }
 
     </script>
 
