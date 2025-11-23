@@ -5,7 +5,7 @@ Teoria para a prova de web 2
 ==== Manipulação de DOM ==== 
 
 
-+ innerHtml => Põe coisas no html
++ innerHTML => Põe coisas no html
 
 + element.textContent => Põe apenas textos 
 

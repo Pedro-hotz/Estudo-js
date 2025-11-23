@@ -7,61 +7,24 @@
     <title>Document</title>
 </head>
 
-<style> 
-    .green {
-        background-color: green;
-    }
-</style>
-
 <body>
+    <div id="mensagem">
 
-    <table id="tabela">
-        <tr>
-            <td>João</td>
-            <td class="nota">6</td>
-            <td>
-                <button onclick="veri(this)">Checar aprovação</button>
-            </td>
-        </tr>
-        <tr>
+    </div>
 
-            <td>Maria</td>
-            <td class="nota">8</td>
-            <td>
-                <button onclick="veri(this)">Checar aprovação</button>
-            </td>
-        </tr>
-        <tr>
-            <td>Ana</td>
-            <td class="nota">5</td>
-            <td>
-                <button onclick="veri(this)">Checar aprovação</button>
-            </td>
-        </tr>
-        <tr>
-            <td>Ana</td>
-            <td class="nota">3</td>
-            <td>
-                <button onclick="veri(this)">Checar aprovação</button>
-            </td>
-        </tr>
-    </table>
 
 
     <script>
 
-        function veri(btn) {
+        let msg = document.querySelector('#mensagem') // seleciona o id 
 
-            let pai = btn.closest('tr');  // sobe até o pai 
-            let nota = pai.querySelector('.nota');  // procura a classe nota 
+        let msgNova = document.createElement('span') // cria um elemento span 
 
-            if ( Number(nota.textContent) >= 5) { // pega o texto da classe nota e verifica se é menor que 5 
-                pai.classList.add('green') // adiciona uma class 
-            }
-        }
+        msgNova.textContent = `sei lá bro` // atribui um texto dentro do elemento 
+
+        msg.appendChild(msgNova) // insere o elemento como um filho do id selecionado
 
     </script>
-
 </body>
 
 </html>
