@@ -50,7 +50,7 @@ Teoria para a prova de web 2
 
 --- addEventListener --- 
 
-elemento.addEventListener(′nomeDoEvento′,funcaoParaRodar) 
+elemento.addEventListener(′nomeDoEvento′,funcaoParaRodar)  // Lembrar de chamar a função sem parentese pois se colocar pareêntese, a função é executada na hora que da refresh ou abre
 
 --------------------------------------
 

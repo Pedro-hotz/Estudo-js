@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-    <div id="mensagem">
-
-    </div>
-
-
+    
+    <span id="text" action="click" >clique</span>
 
     <script>
 
-        let msg = document.querySelector('#mensagem') // seleciona o id 
+        let txt = document.querySelector('#text') // seleciona o id 
 
-        let msgNova = document.createElement('span') // cria um elemento span 
+        txt.addEventListener('click', acao) // fica escutando um click do elemento que foi selecionado 
 
-        msgNova.textContent = `sei lá bro` // atribui um texto dentro do elemento 
-
-        msg.appendChild(msgNova) // insere o elemento como um filho do id selecionado
+        function acao(){ // função chamada se clicar  
+            alert('Cliquei')
+        }
 
     </script>
 </body>
-
 </html>
