@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<style>
+    .principal {
+        background-color: green;
+    }
+    .card {
+        background-color: blue;
+    }
+</style>
+
 <body>
-    
-    <span id="text" action="click" >clique</span>
+
+
+    <div id="card">
+    </div>
 
     <script>
 
-        let txt = document.querySelector('#text') // seleciona o id 
+        let elem = document.querySelector("#card")
 
-        txt.addEventListener('click', acao) // fica escutando um click do elemento que foi selecionado 
-
-        function acao(){ // função chamada se clicar  
-            alert('Cliquei')
+        if (elem.classList.contains('card') == true) { // se existir a classe card, remove a classe card e adiciona a classe principal 
+            elem.classList.remove('card')
+            elem.classList.add('principal')
+        } else { // se não existe a classe card, adiciona ! 
+            elem.classList.add('card')
         }
 
     </script>
+
 </body>
+
 </html>
