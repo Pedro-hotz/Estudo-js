@@ -136,7 +136,7 @@ Aplicação: Em vez de anexar um addEventListener a cada elemento filho (ex: 50 
         }
 
 
-    - > Validação de check e radio button 
+    -> Validação de check e radio button 
         ???
 
 
