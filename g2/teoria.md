@@ -9,6 +9,8 @@ Teoria para a prova de web 2
 
 + element.textContent => Põe apenas textos 
 
++ input não usa .textContent => input usa value 
+
 + element.style => muda o css 
 
     element.style.propriedadesCSS = 'novoValor'  ?  // é possível criar classe nova 
@@ -160,7 +162,7 @@ Aplicação: Em vez de anexar um addEventListener a cada elemento filho (ex: 50 
     Para isso, usamos o event.prevenDefault()
 
     form.addEventerListener('submit', function(e) {
-        e.prevenDefault(); 
+        e.preventDefault(); 
 
         // Faz a validação 
         

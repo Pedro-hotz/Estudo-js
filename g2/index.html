@@ -1,28 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
 
-    <h2 id="subtitulo">
-        Olá
-    </h2>
+<body>
+
+    <form action="submit">
+
+        <div id="login">
+            <label for="login">login</label>
+            <input type="text">
+        </div>
+
+        <div id="idade">
+            <label for="idade">idade</label>
+            <input type="text">
+        </div>
+
+
+        <div id="genero">
+            <label for="genero">genero</label>
+            <input type="radio">m
+            <input type="radio">f
+            <input type="radio">n f n m
+
+        </div>
+
+        <div id="pref">
+            <label for="genero">genero</label>
+            <input type="radio">rock
+            <input type="radio">mpb
+            <input type="radio">funk
+            <input type="radio">pop
+
+
+        </div>
+
+        <div id="senha">
+            <label for="senha">senha</label>
+            <input type="text" name="senha">
+
+        </div>
+
+        <div id="conSenha">
+            <label for="conSenha">Confirmação de senha</label>
+            <input type="text" name="conSenha">
+
+        </div>
+
+        <button>Enviar</button>
+
+    </form>
+
 
     <script>
+        let form = document.querySelect('form')
 
-        let sub = document.querySelector('#subtitulo') // seleciona pelo o id o elemento 
+        // campos
+        let login = form.querySelect('#login input')
+        let idade = form.querySelect('#idade')
+        let genero = form.querySelect('#genero')
+        let pref = form.querySelect('#pref')
+        let senha = form.querySelect('#senha')
+        let conSenha = form.querySelect('#conSenha')
 
-        sub.addEventListener('click', muda) // fica escutando/esperando o click 
 
-        function muda() { // função chamada a cima 
-            sub.textContent = 'Clidado' // altera apenas o texto 
+
+
+        form.addEventlistener('submit', function(e){
+            e.prevenDefault()
+
+            if ((login.textContent).lenght > 8 ) {
+                alert('muito Login')
+            } else if ( Number(idade) > 12) {
+                alert('Idade 12 mairo')
+            } // else if ( ) generro checked 
+            //  else if () {
+            //  } duas musicas marcadas pelo menos 
+            else if (senha != conSenha) {
+                alert('Senha erradas')
+            } else {
+                form.submit()
+            }
+
             
-        }
+        })
 
     </script>
+
 </body>
+
 </html>
