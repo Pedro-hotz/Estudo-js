@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<body>
+    
 
-<body onload="muda()">
-
-    <span>
-        akaka
-    </span>
-    <p>kakaka</p>
-
+    <h2 id="subtitulo">
+        Olá
+    </h2>
 
     <script>
-        function muda() {
-            let spans = document.querySelectorAll('span')
 
-            spans.forEach(sp => {
-                sp.style.backgroundColor = 'green'
-            })
+        let sub = document.querySelector('#subtitulo') // seleciona pelo o id o elemento 
+
+        sub.addEventListener('click', muda) // fica escutando/esperando o click 
+
+        function muda() { // função chamada a cima 
+            sub.textContent = 'Clidado' // altera apenas o texto 
+            
         }
+
     </script>
 </body>
-
 </html>
