@@ -1,40 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<body onload="troca()"> <!-- Ao terminar de carregar o elemento, ele chama a função que faz ficar negrito -->
+<p>dsds</p>
 
-<style>
-    .principal {
-        background-color: green;
-    }
-    .card {
-        background-color: blue;
-    }
-</style>
-
-<body>
-
-
-    <div id="card">
-    </div>
-
-    <script>
-
-        let elem = document.querySelector("#card")
-
-        if (elem.classList.contains('card') == true) { // se existir a classe card, remove a classe card e adiciona a classe principal 
-            elem.classList.remove('card')
-            elem.classList.add('principal')
-        } else { // se não existe a classe card, adiciona ! 
-            elem.classList.add('card')
+    <script> 
+        function troca(){
+            document.body.style.fontWeight = 'bold' // indica o "caminho" 
         }
-
     </script>
 
 </body>
-
 </html>
