@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body onload="troca()"> <!-- Ao terminar de carregar o elemento, ele chama a função que faz ficar negrito -->
-<p>dsds</p>
 
-    <script> 
-        function troca(){
-            document.body.style.fontWeight = 'bold' // indica o "caminho" 
+<body onload="muda()">
+
+    <span>
+        akaka
+    </span>
+    <p>kakaka</p>
+
+
+    <script>
+        function muda() {
+            let spans = document.querySelectorAll('span')
+
+            spans.forEach(sp => {
+                sp.style.backgroundColor = 'green'
+            })
         }
     </script>
-
 </body>
+
 </html>

@@ -24,6 +24,20 @@ Teoria para a prova de web 2
 
 =============================================================================
 
+
+=== seleção ===
+
++ id 
+
++ name
+
++ class
+
++ querySelector() pode usar id('#id'), class('.class') ou nomeDoElemento('nomdeDoElemento')
+
+
+=============================================================================
+
 === Manipulação de classes === 
 
 + .add('classe') => Adiciona uma classe ao elemento.
@@ -41,7 +55,7 @@ Teoria para a prova de web 2
 
 + click 
 
-+ onload    => A página (ou um elemento, como uma imagem) terminou de carregar.
++ onload    => A página (ou um elemento, como uma imagem) terminou de carregar. Só funciona no body
 
 + keyup     => Solta uma tecla depois de apertar.
 
